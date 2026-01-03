@@ -1,11 +1,7 @@
 #!/usr/bin/env bash 
 #!/bin/bash
 
-#TODO:
-# source, should just export the var here, 
-# /Users/pedrolopes/playground/bashscripting/future-os/secret_variables.sh shoule be sourced BY bash, not scripts
-
-source /Users/pedrolopes/playground/bashscripting/secret_variables.sh
+$WIKI_BASEPAGE_URL="insert your URL here" #Note that I simply have this URL as an export in my .bashrc file, avoiding this line of code
 
 action=$1
 shift
