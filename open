@@ -5,6 +5,9 @@
 
 $WIKI_BASEPAGE_URL="insert your URL here" #Note that I simply have this URL as an export in my .bashrc file, avoiding this line of code
 
+
+# Credit remains with the original author, except minor mods below
+
 action=$1
 shift
 

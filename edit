@@ -1,0 +1,23 @@
+#!/bin/bash
+#!/usr/bin/env bash 
+
+# Credit remains with the original author, I am just putting this here so you can git pull my entire actions folder
+
+action=$1
+shift
+
+function usage(){
+  echo "  Edit line:"
+  echo "    edit ITEM#"
+  echo ""
+  exit
+}
+
+[ "$action" = "usage" ] && usage
+
+if ! [[ "$1" =~ ^[0-9]+$ ]]; then
+    echo "Error! Usage:"
+    usage
+fi
+
+${EDITOR:-vi} +$1 "$TODO_FILE"
