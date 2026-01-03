@@ -1,6 +1,8 @@
 #!/usr/bin/env bash 
 #!/bin/bash
 
+# This is a variant of "nav" todo action, except besides opening urls that start with "http", it can also open any link contained inside of [[text]], which is the standard DokuWiki syntax for a page link. It does so by prepending a WIKI_BASEPAGE_URL, which points to the user's wiki URL. 
+
 $WIKI_BASEPAGE_URL="insert your URL here" #Note that I simply have this URL as an export in my .bashrc file, avoiding this line of code
 
 action=$1
