@@ -5,7 +5,7 @@
 # source, should just export the var here, 
 # /Users/pedrolopes/playground/bashscripting/future-os/secret_variables.sh shoule be sourced BY bash, not scripts
 
-source /Users/pedrolopes/playground/bashscripting/future-os/secret_variables.sh
+source /Users/pedrolopes/playground/bashscripting/secret_variables.sh
 
 action=$1
 shift
@@ -37,6 +37,7 @@ if [ "$URL" = "" ]; then
     fi
     exit 1
 fi
+ 
 
 # Parse if this is a dokuwiki based link to page (e.g., [[admin:todo]])
 if (echo "$URL" | grep -q -E -o "\[\[.+\]\]" && echo 1 >/dev/null 2>&1); then # this is close, do later
